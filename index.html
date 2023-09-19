@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Dados</title>
+</head>
+
+<body>
+    <main class="container">
+        <form class="tela-1" id="forms1">
+            <h1>Captura de dados</h1>
+            <div>
+                <label for="nome-input">Nome:</label>
+                <input type="text" placeholder="Nome!" id="nome-input" class="nome-input">
+            </div>
+            <div>
+                <label for="email-input">Email:</label>
+                <input type="email" placeholder="Email!" id="email-input">
+            </div>
+            <div>
+                <label for="senha-input">Senha:</label>
+                <input type="password" placeholder="Senha!" id="senha-input">
+            </div>
+            <div>
+                <button type="submit" class="botao" onclick="enviar_dados()">Enviar</button>
+            </div>
+            
+        </form>
+        <form class="tela-2" id="forms2">
+            <h1>Dados</h1>
+            <div>
+                <label for="nome-dados">Diga o Nome da Pessoa e pegue os Dados</label>
+                <input type="text" placeholder="Nome!" id="nome-dados">
+                <button type="submit" class="botao" onclick="pegar_dados()">Enviar</button>
+            </div>
+            <div id="tela-resultado">
+                
+                <h3 id="resultado-nome"></h3>
+                <h3 id="resultado-email"></h3>
+                <h3 id="resultado-senha"></h3>
+            </div>
+        </form>
+    </main>
+    <script src="./script.js"></script>
+</body>
+
+</html>
