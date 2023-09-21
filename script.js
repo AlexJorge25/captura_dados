@@ -30,7 +30,7 @@ function pegar_dados() {
             break;
         }
     }
-
+    
     if (!encontrado) {
         document.getElementById("resultado-email").innerHTML = "Nome não encontrado";
         document.getElementById("resultado-nome").innerHTML = "";
